@@ -1,0 +1,1717 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.coffee-navbar {
+    background-color: #faf7f3;
+    height: 82px;
+    border-bottom: 1px solid #eee8e2;
+
+    font-family: "Outfit", sans-serif;
+
+    position: relative;
+    z-index: 1000;
+}
+
+
+/* Logo */
+
+.coffee-logo {
+    display: flex;
+    flex-direction: column;
+
+    text-decoration: none;
+
+    line-height: 1;
+}
+
+.coffee-logo span {
+    font-family: "Playfair Display", serif;
+
+    color: #100b09;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+}
+
+.coffee-logo small {
+    color: #9a5c32;
+
+    font-family: "Outfit", sans-serif;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-top: 5px;
+}
+
+
+/* Navigation */
+
+.coffee-navbar .navbar-nav {
+    gap: 30px;
+}
+
+.coffee-navbar .nav-link {
+    color: #514944;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    padding: 8px 0 !important;
+
+    position: relative;
+
+    transition: color 0.3s ease;
+}
+
+.coffee-navbar .nav-link:hover {
+    color: #100b09;
+}
+
+.coffee-navbar .nav-link.active {
+    color: #100b09;
+}
+
+
+/* Active underline */
+
+.coffee-navbar .nav-link.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 20px;
+    height: 2px;
+
+    margin: auto;
+
+    background-color: #9a5c32;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Find a Cafe */
+
+.find-cafe {
+    text-decoration: none;
+
+    color: #17110e;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: color 0.3s ease;
+}
+
+.find-cafe:hover {
+    color: #9a5c32;
+}
+
+
+/* Order Online */
+
+.order-online {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 138px;
+    height: 44px;
+
+    padding: 0 22px;
+
+    background-color: #100b09;
+    color: #fff;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.order-online:hover {
+    background-color: #2a1b14;
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+
+/* User Button */
+
+.user-btn {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #100b09;
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.user-btn:hover {
+    background-color: #9a5c32;
+    color: #fff;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+.navbar-toggler {
+    border: none;
+    padding: 8px;
+
+    color: #100b09;
+    font-size: 21px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+@media (max-width: 991px) {
+
+    .coffee-navbar {
+        height: auto;
+        min-height: 75px;
+    }
+
+    .coffee-navbar .navbar-collapse {
+        background-color: #faf7f3;
+
+        padding: 25px 0;
+
+        border-top: 1px solid #eee8e2;
+
+        margin-top: 12px;
+    }
+
+    .coffee-navbar .navbar-nav {
+        gap: 8px;
+        margin-bottom: 20px !important;
+    }
+
+    .coffee-navbar .nav-link {
+        padding: 10px 0 !important;
+    }
+
+    .coffee-navbar .nav-link.active::after {
+        display: none;
+    }
+
+    .navbar-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .find-cafe {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .order-online {
+        width: 100%;
+    }
+
+    .user-btn {
+        margin: auto;
+    }
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    background-color: #faf7f3;
+    min-height: calc(100vh - 80px);
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Label */
+
+.hero-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    background-color: #ffe0cc;
+    color: #8b4d25;
+
+    padding: 9px 17px;
+    border-radius: 50px;
+
+    font-family: "Outfit", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+
+    margin-bottom: 30px;
+}
+
+.hero-label i {
+    font-size: 14px;
+}
+
+
+/* Headline */
+
+.hero-title {
+    font-family: "Playfair Display", serif;
+    color: #100b09;
+
+    font-size: clamp(48px, 5vw, 68px);
+    font-weight: 600;
+    line-height: 1.08;
+
+    margin-bottom: 25px;
+}
+
+
+/* Description */
+
+.hero-text {
+    font-family: "Outfit", sans-serif;
+    color: #514944;
+
+    font-size: 17px;
+    line-height: 1.65;
+
+    max-width: 600px;
+    margin-bottom: 32px;
+}
+
+
+/* Buttons */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.hero-buttons .btn {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+
+    padding: 16px 28px;
+    border-radius: 9px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Order button */
+
+.btn-order {
+    background-color: #100b09;
+    color: white;
+}
+
+.btn-order:hover {
+    background-color: #2a1b14;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-order i {
+    margin-left: 10px;
+}
+
+
+/* Menu button */
+
+.btn-menu {
+    background-color: #eee9e4;
+    color: #17110e;
+}
+
+.btn-menu:hover {
+    background-color: #e2dbd4;
+    color: #17110e;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.hero-features {
+    display: flex;
+    gap: 55px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.feature-icon {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    background-color: #eeeae5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #9b5b2f;
+    font-size: 17px;
+}
+
+.feature-item h6 {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    color: #17110e;
+    margin: 0 0 2px;
+}
+
+.feature-item p {
+    font-family: "Outfit", sans-serif;
+    font-size: 13px;
+
+    color: #625951;
+    margin: 0;
+}
+
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-image-wrapper {
+    position: relative;
+
+    width: 100%;
+    max-width: 560px;
+
+    margin-left: auto;
+}
+
+.hero-image {
+    width: 100%;
+    height: 610px;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    display: block;
+}
+
+
+/* =========================
+   RATING CARD
+========================= */
+
+.rating-card {
+    position: absolute;
+
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+
+    background-color: rgba(250, 248, 245, 0.96);
+
+    border-radius: 14px;
+
+    padding: 17px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.rating-icon {
+    width: 43px;
+    height: 43px;
+
+    background-color: #ffdbc2;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #3a2113;
+}
+
+.rating-content {
+    flex: 1;
+}
+
+.rating-content h6 {
+    font-family: "Outfit", sans-serif;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    color: #17110e;
+
+    margin: 0;
+}
+
+.rating-content span {
+    font-family: "Outfit", sans-serif;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    color: #93582e;
+
+    letter-spacing: 0.5px;
+}
+
+.batch-number {
+    background-color: #ece7e2;
+
+    color: #635b55;
+
+    font-family: "Outfit", sans-serif;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero-title {
+        font-size: 52px;
+    }
+
+    .hero-image-wrapper {
+        margin: 20px auto 0;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero-section {
+        padding: 45px 0;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        margin-bottom: 40px;
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-image {
+        height: 450px;
+    }
+
+    .rating-card {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+    }
+
+    .batch-number {
+        display: none;
+    }
+}
+/* =========================
+   HERITAGE SECTION
+========================= */
+
+.heritage-section {
+    background-color: #faf7f3;
+    padding: 110px 0;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.heritage-image-wrapper {
+    position: relative;
+    max-width: 600px;
+}
+
+.heritage-image {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 18px;
+}
+
+
+/* =========================
+   FLOATING CARD
+========================= */
+
+.heritage-card {
+    position: absolute;
+
+    right: -25px;
+    bottom: -25px;
+
+    width: 345px;
+
+    padding: 18px;
+
+    background-color: #fffdf9;
+
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    box-shadow: 0 12px 35px rgba(35, 23, 15, 0.10);
+}
+
+.heritage-card-icon {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #fff0e4;
+    color: #9a5c32;
+
+    font-size: 18px;
+}
+
+.heritage-card p {
+    margin: 0;
+
+    font-family: "Outfit", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+
+    color: #29211d;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.heritage-content {
+    padding-left: 20px;
+}
+
+.section-label {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-family: "Outfit", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #9a5c32;
+
+    letter-spacing: 1.2px;
+}
+
+
+.heritage-title {
+    margin-bottom: 25px;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(42px, 4vw, 54px);
+    font-weight: 600;
+    line-height: 1.1;
+
+    color: #100b09;
+}
+
+.heritage-content > p {
+    max-width: 600px;
+
+    margin-bottom: 25px;
+
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    line-height: 1.75;
+
+    color: #514944;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.heritage-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+
+    margin-top: 40px;
+}
+
+.stat-box {
+    background-color: #fffdf9;
+
+    padding: 27px 20px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 15px rgba(35, 23, 15, 0.03);
+}
+
+.stat-box h3 {
+    margin: 0 0 6px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 600;
+
+    color: #100b09;
+}
+
+.stat-box span {
+    font-family: "Outfit", sans-serif;
+    font-size: 13px;
+
+    color: #514944;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+    .heritage-section {
+        padding: 80px 0;
+    }
+
+    .heritage-content {
+        padding-left: 0;
+    }
+
+    .heritage-image-wrapper {
+        margin: 0 auto;
+    }
+
+    .heritage-card {
+        right: 20px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .heritage-section {
+        padding: 60px 0;
+    }
+
+    .heritage-image {
+        height: 380px;
+    }
+
+    .heritage-card {
+        position: relative;
+
+        right: auto;
+        bottom: auto;
+
+        width: 90%;
+
+        margin: -30px auto 0;
+    }
+
+    .heritage-title {
+        font-size: 40px;
+    }
+
+    .heritage-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-box {
+        padding: 22px;
+    }
+}
+
+/* =========================
+   Favorites Section
+========================= */
+
+.favorites-section {
+    background-color: #fbf7f2;
+    font-family: "Outfit", sans-serif;
+    color: #17120f;
+}
+
+
+/* =========================
+   Section Header
+========================= */
+
+.section-label {
+    color: #8b572a;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.section-title {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+.section-description {
+    max-width: 650px;
+    color: #493d36;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.catalog-link {
+    color: #8b572a;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.catalog-link i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.catalog-link:hover {
+    color: #5f3518;
+}
+
+.catalog-link:hover i {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   Drink Card
+========================= */
+
+.drink-card {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid transparent;
+
+    box-shadow: 0 8px 25px rgba(71, 45, 27, 0.04);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* =========================
+   Hover
+========================= */
+
+.drink-card:hover {
+    transform: translateY(-7px);
+    border-color: #ead7c7;
+    box-shadow: 0 18px 35px rgba(71, 45, 27, 0.12);
+}
+
+
+/* =========================
+   Icon
+========================= */
+
+.drink-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background-color: #fff0e5;
+    color: #985a27;
+
+    font-size: 22px;
+
+    margin-bottom: 25px;
+
+    transition: 0.3s ease;
+}
+
+
+/* Hover icon */
+.drink-card:hover .drink-icon {
+    background-color: #8b572a;
+    color: #ffffff;
+}
+
+
+/* =========================
+   Name + Price
+========================= */
+
+.drink-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    margin-bottom: 16px;
+}
+
+.drink-heading h3 {
+    font-family: "Outfit", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0;
+
+    transition: color 0.3s ease;
+}
+
+.drink-heading span {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+
+/* Hover title */
+.drink-card:hover .drink-heading h3 {
+    color: #8b572a;
+}
+
+
+/* =========================
+   Description
+========================= */
+
+.drink-description {
+    color: #4c413b;
+    font-size: 15px;
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Tags
+========================= */
+
+.drink-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    margin-bottom: 25px;
+}
+
+.drink-tags span {
+    background-color: #f1eee9;
+    color: #493d36;
+
+    border-radius: 20px;
+
+    padding: 5px 11px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   Order Button
+========================= */
+
+.order-btn {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+
+    background-color: #f0ece7;
+    color: #211914;
+
+    padding: 11px 15px;
+
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-top: auto;
+
+    transition: 0.3s ease;
+}
+
+.order-btn i {
+    margin-right: 8px;
+}
+
+
+/* Button hover */
+.drink-card:hover .order-btn {
+    background-color: #8b572a;
+    color: #ffffff;
+}
+/* =========================
+   Why Coffee Section
+========================= */
+
+.why-coffee-section {
+    background-color: #f8f4ef;
+    color: #17120f;
+    font-family: "Outfit", sans-serif;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.why-header {
+    margin-bottom: 70px;
+}
+
+.why-header .section-label {
+    color: #8b572a;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.why-title {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    margin-top: 18px;
+    margin-bottom: 14px;
+}
+
+.why-description {
+    max-width: 700px;
+    margin: 0 auto;
+
+    color: #4c413b;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   Cards
+========================= */
+
+.why-card {
+    background-color: #fffdf9;
+
+    border: 1px solid #eee8e1;
+    border-radius: 18px;
+
+    padding: 34px;
+
+    box-shadow: 0 5px 20px rgba(71, 45, 27, 0.03);
+}
+
+
+/* =========================
+   Icon
+========================= */
+
+.why-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #eeeae5;
+    color: #985a27;
+
+    border-radius: 13px;
+
+    font-size: 21px;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   Card Title
+========================= */
+
+.why-card h3 {
+    font-family: "Outfit", sans-serif;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Card Description
+========================= */
+
+.why-card p {
+    color: #4c413b;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+/* =========================
+   Coffee CTA Section
+========================= */
+
+.coffee-cta-section {
+    background-color: #f8f4ef;
+    padding: 80px 0;
+    font-family: "Outfit", sans-serif;
+}
+
+
+/* =========================
+   CTA Box
+========================= */
+
+.coffee-cta {
+    position: relative;
+
+    min-height: 585px;
+
+    border-radius: 24px;
+    overflow: hidden;
+
+    background-image: url("./Photos/screen2.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* =========================
+   Dark Overlay
+========================= */
+
+.coffee-cta::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.68);
+
+    z-index: 1;
+}
+
+
+/* =========================
+   Content
+========================= */
+
+.coffee-cta-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 800px;
+
+    padding: 40px 25px;
+    color: #ffffff;
+}
+
+
+/* =========================
+   Label
+========================= */
+
+.cta-label {
+    display: inline-block;
+
+    background-color: rgba(139, 87, 42, 0.55);
+
+    color: #f7e9dc;
+
+    padding: 7px 16px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   Heading
+========================= */
+
+.coffee-cta h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 52px;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   Description
+========================= */
+
+.coffee-cta p {
+    max-width: 680px;
+
+    margin: 0 auto 40px;
+
+    color: #f1ece7;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+}
+
+
+/* General button */
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-width: 200px;
+
+    padding: 16px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-family: "Outfit", sans-serif;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+/* Primary */
+
+.primary-btn {
+    background-color: #a56428;
+    color: #ffffff;
+}
+
+.primary-btn:hover {
+    background-color: #8b572a;
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* Secondary */
+
+.secondary-btn {
+    background-color: rgba(65, 55, 50, 0.85);
+    color: #ffffff;
+}
+
+.secondary-btn:hover {
+    background-color: rgba(85, 72, 65, 0.95);
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+    .coffee-cta-section {
+        padding: 50px 0;
+    }
+
+    .coffee-cta {
+        min-height: 550px;
+        border-radius: 18px;
+    }
+
+    .coffee-cta h2 {
+        font-size: 38px;
+    }
+
+    .coffee-cta p {
+        font-size: 15px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* =========================
+   Footer
+========================= */
+
+.site-footer {
+    background-color: #f8f4ef;
+    color: #17120f;
+
+    font-family: "Outfit", sans-serif;
+
+    padding: 75px 0 25px;
+}
+
+
+/* =========================
+   Brand
+========================= */
+
+.footer-brand {
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+    font-weight: 600;
+
+    margin-bottom: 22px;
+}
+
+.footer-description {
+    max-width: 410px;
+
+    color: #493d36;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   Social Icons
+========================= */
+
+.footer-socials {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-socials a {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f1eee9;
+    color: #17120f;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.footer-socials a:hover {
+    background-color: #8b572a;
+    color: #ffffff;
+}
+
+
+/* =========================
+   Footer Headings
+========================= */
+
+.footer-heading {
+    font-size: 16px;
+    font-weight: 700;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   Quick Links
+========================= */
+
+.footer-links {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 14px;
+}
+
+.footer-links a {
+    color: #493d36;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #8b572a;
+}
+
+
+/* =========================
+   Contact
+========================= */
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+    color: #493d36;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.contact-item > i {
+    color: #8b572a;
+
+    font-size: 17px;
+
+    margin-top: 3px;
+
+    min-width: 16px;
+}
+
+.contact-item strong,
+.contact-item span {
+    display: block;
+}
+
+.contact-item strong {
+    font-weight: 500;
+    color: #2b211b;
+}
+
+
+/* =========================
+   Newsletter
+========================= */
+
+.newsletter-text {
+    color: #493d36;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    margin-bottom: 18px;
+}
+
+.newsletter-form {
+    display: flex;
+
+    width: 100%;
+
+    margin-bottom: 10px;
+}
+
+.newsletter-form input {
+    min-width: 0;
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    background-color: #fffdf9;
+
+    padding: 13px 15px;
+
+    font-family: "Outfit", sans-serif;
+    font-size: 13px;
+
+    border-radius: 8px 0 0 8px;
+}
+
+.newsletter-form input::placeholder {
+    color: #8b8179;
+}
+
+.newsletter-form button {
+    border: none;
+
+    background-color: #17120f;
+    color: #ffffff;
+
+    padding: 0 22px;
+
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+
+    border-radius: 0 8px 8px 0;
+
+    transition: 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #8b572a;
+}
+
+.newsletter-note {
+    display: block;
+
+    color: #796e66;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   Footer Bottom
+========================= */
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-top: 90px;
+    padding-top: 25px;
+
+    border-top: 1px solid #e5ddd5;
+}
+
+.footer-bottom p {
+    color: #493d36;
+
+    font-size: 13px;
+
+    margin: 0;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-bottom-links a {
+    color: #493d36;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #8b572a;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 991px) {
+
+    .site-footer {
+        padding: 60px 0 25px;
+    }
+
+    .footer-bottom {
+        margin-top: 60px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .site-footer {
+        padding: 50px 0 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-top: 45px;
+    }
+
+    .footer-bottom-links {
+        flex-wrap: wrap;
+        gap: 15px 25px;
+    }
+
+}
+
+
+@media (max-width: 575px) {
+
+    .newsletter-form {
+        max-width: 100%;
+    }
+
+    .footer-bottom p {
+        line-height: 1.6;
+    }
+
+}

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roast & Bean</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+     <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Your CSS -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-lg coffee-navbar sticky-top">
+    <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand coffee-logo" href="#">
+            <span>ROAST &amp; BEAN</span>
+            <small>ARTISANAL COFFEE CO.</small>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#coffeeNavbar"
+            aria-controls="coffeeNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse" id="coffeeNavbar">
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#locations">Locations</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#story">Story</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+            <!-- Right Side -->
+            <div class="navbar-actions">
+
+                <a href="#locations" class="find-cafe">
+                    Find a Cafe
+                </a>
+
+                <a href="#" class="order-online">
+                    Order Online
+                </a>
+
+                <a href="#" class="user-btn">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</nav>
+<!-- Navbar ends -->
+<!-- Hero Starts -->
+ <section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Left Content -->
+      <div class="col-lg-6">
+
+        <!-- Label -->
+        <div class="hero-label">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+          CRAFTED WITH PASSION
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-title">
+          A Better Day Starts
+          <br>
+          With Great Coffee.
+        </h1>
+
+        <!-- Description -->
+        <p class="hero-text">
+          Ethically sourced, masterfully roasted single-origin beans,
+          brewed in a cozy sanctuary designed for conversation and craft.
+        </p>
+
+        <!-- Buttons -->
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-order">
+            Order Now
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="#" class="btn btn-menu">
+            Explore Menu
+          </a>
+        </div>
+
+        <!-- Features -->
+        <div class="hero-features">
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+
+            <div>
+              <h6>Free Local Delivery</h6>
+              <p>On whole bean bags &gt; $35</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fa-regular fa-leaf"></i>
+            </div>
+
+            <div>
+              <h6>Sustainably Packaged</h6>
+              <p>100% compostable barrier bags</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Right Image -->
+      <div class="col-lg-6">
+
+        <div class="hero-image-wrapper">
+
+          <img
+            src="./Photos/screen.png"
+            alt="Freshly brewed coffee"
+            class="hero-image"
+          >
+
+          <!-- Rating Card -->
+          <div class="rating-card">
+
+            <div class="rating-icon">
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="rating-content">
+              <h6>4.9 / 5.0 Rating</h6>
+              <span>ROASTED DAILY ON-SITE</span>
+            </div>
+
+            <div class="batch-number">
+              Batch #104
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Hero ends -->
+<!-- about stats -->
+ <section class="heritage-section" id="about">
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <!-- Image -->
+            <div class="col-lg-6">
+                <div class="heritage-image-wrapper">
+
+                    <img
+                        src="./Photos/About.png"
+                        alt="Coffee beans and coffee shop"
+                        class="heritage-image"
+                    >
+
+                    <!-- Floating Card -->
+                    <div class="heritage-card">
+
+                        <div class="heritage-card-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+
+                        <p>
+                            Direct trade partnerships with 14 family-run
+                            coffee farms worldwide.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Content -->
+            <div class="col-lg-6">
+                <div class="heritage-content">
+
+                    <span class="section-label">
+                        OUR HERITAGE
+                    </span>
+
+                    <h2 class="heritage-title">
+                        Made for Coffee Lovers
+                    </h2>
+
+                    <p>
+                        Founded with a deep reverence for the bean, Roast &amp;
+                        Bean began as an unassuming drum roaster tucked behind
+                        an 1890s brick mill. Today, every roast profile is
+                        personally calibrated by our master roasters to draw
+                        out subtle, naturally developed notes of cacao, wild
+                        plum, and golden honey.
+                    </p>
+
+                    <p>
+                        We partner exclusively with regenerative family estates,
+                        roasting in hyper-fresh small batches. Our cafe
+                        sanctuaries are purposely slow spaces—where oak timber,
+                        soft amber light, and the gentle hiss of espresso steam
+                        welcome you to unwind.
+                    </p>
+
+
+                    <!-- Stats -->
+                    <div class="heritage-stats">
+
+                        <div class="stat-box">
+                            <h3>10+</h3>
+                            <span>Years of Passion</span>
+                        </div>
+
+                        <div class="stat-box">
+                            <h3>20+</h3>
+                            <span>Coffee Blends</span>
+                        </div>
+
+                        <div class="stat-box">
+                            <h3>5K+</h3>
+                            <span>Happy Patrons</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- about ends -->
+
+<!-- Our Favorites Section -->
+<section class="favorites-section py-5">
+    <div class="container">
+
+        <!-- Section Header -->
+        <div class="row align-items-end mb-5">
+
+            <div class="col-lg-8">
+                <span class="section-label">HANDCRAFTED DRINKS</span>
+
+                <h2 class="section-title mt-3">
+                    Our Favorites
+                </h2>
+
+                <p class="section-description">
+                    Carefully crafted signatures brewed to seasonal perfection by master
+                    baristas.
+                </p>
+            </div>
+
+            <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                <a href="#" class="catalog-link">
+                    View Full Catalog
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- Cards -->
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="drink-card h-100">
+
+                    <div class="drink-icon">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+
+                    <div class="drink-heading">
+                        <h3>Cappuccino</h3>
+                        <span>$4.75</span>
+                    </div>
+
+                    <p class="drink-description">
+                        Rich double espresso crowned with velvety micro-foam and lightly
+                        dusted Venezuelan cocoa...
+                    </p>
+
+                    <div class="drink-tags">
+                        <span>VELVETY</span>
+                        <span>COCOA</span>
+                    </div>
+
+                    <button class="order-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        Add to Order
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="drink-card h-100">
+
+                    <div class="drink-icon">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+
+                    <div class="drink-heading">
+                        <h3>Caramel Latte</h3>
+                        <span>$5.50</span>
+                    </div>
+
+                    <p class="drink-description">
+                        Smooth espresso infused with slow-simmered house salted caramel
+                        syrup and steamed...
+                    </p>
+
+                    <div class="drink-tags">
+                        <span>CARAMEL</span>
+                        <span>OAT MILK</span>
+                    </div>
+
+                    <button class="order-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        Add to Order
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="drink-card h-100">
+
+                    <div class="drink-icon">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+
+                    <div class="drink-heading">
+                        <h3>Single Origin</h3>
+                        <span>$3.95</span>
+                    </div>
+
+                    <p class="drink-description">
+                        Bold, complex notes of dark chocolate, Meyer lemon zest, and a
+                        lingering roasted hazelnut finish.
+                    </p>
+
+                    <div class="drink-tags">
+                        <span>ETHIOPIA</span>
+                        <span>CITRUS</span>
+                    </div>
+
+                    <button class="order-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        Add to Order
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Card 4 -->
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="drink-card h-100">
+
+                    <div class="drink-icon">
+                        <i class="fa-solid fa-cookie-bite"></i>
+                    </div>
+
+                    <div class="drink-heading">
+                        <h3>Mocha Truffle</h3>
+                        <span>$5.75</span>
+                    </div>
+
+                    <p class="drink-description">
+                        Decadent 72% Belgian dark chocolate melt blended seamlessly with
+                        our signature dark espresso...
+                    </p>
+
+                    <div class="drink-tags">
+                        <span>DARK CHOC</span>
+                        <span>RICH</span>
+                    </div>
+
+                    <button class="order-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        Add to Order
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Why Coffee Lovers Choose Us -->
+<section class="why-coffee-section py-5">
+
+    <div class="container">
+
+        <!-- Section Header -->
+        <div class="text-center why-header">
+
+            <span class="section-label">
+                THE ROAST & BEAN PROMISE
+            </span>
+
+            <h2 class="why-title">
+                Why Coffee Lovers Choose Us
+            </h2>
+
+            <p class="why-description">
+                We believe exceptional coffee is an art born from unyielding respect
+                for agriculture, technique, and mindful hospitality.
+            </p>
+
+        </div>
+
+
+        <!-- Features -->
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-xl-3">
+
+                <div class="why-card h-100">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </div>
+
+                    <h3>Freshly Roasted</h3>
+
+                    <p>
+                        Small drum roasts calibrated daily to guarantee optimal aroma,
+                        flavor bloom, and crema consistency in every brew.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-xl-3">
+
+                <div class="why-card h-100">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+
+                    <h3>Premium Beans</h3>
+
+                    <p>
+                        100% direct-trade Arabica beans hand-selected from high-altitude
+                        volcanic soils in Colombia, Ethiopia, and Sumatra.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-xl-3">
+
+                <div class="why-card h-100">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+
+                    <h3>Cozy Atmosphere</h3>
+
+                    <p>
+                        Warm ambient lighting, vintage leather armchairs, handcrafted
+                        oak tables, and a relaxed, unhurried neighborhood pace.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 4 -->
+            <div class="col-12 col-md-6 col-xl-3">
+
+                <div class="why-card h-100">
+
+                    <div class="why-icon">
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+
+                    <h3>Friendly Service</h3>
+
+                    <p>
+                        Passionate certified baristas eager to share flavor notes,
+                        brew recommendations, and tailor your morning ritual.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CTA Section -->
+<section class="coffee-cta-section">
+
+    <div class="container">
+
+        <div class="coffee-cta">
+
+            <!-- Content -->
+            <div class="coffee-cta-content">
+
+                <span class="cta-label">
+                    WARMTH IN EVERY CUP
+                </span>
+
+                <h2>
+                    Your Perfect Coffee Is
+                    <br>
+                    Waiting.
+                </h2>
+
+                <p>
+                    Step inside for your morning cup, an afternoon retreat, or grab freshly
+                    roasted whole beans to elevate your rituals at home.
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="#" class="cta-btn primary-btn">
+                        <i class="fa-solid fa-store"></i>
+                        Visit Us Today
+                    </a>
+
+                    <a href="#" class="cta-btn secondary-btn">
+                        <i class="fa-regular fa-compass"></i>
+                        Find Nearest Cafe
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+            <!-- Brand -->
+            <div class="col-12 col-lg-4">
+
+                <h3 class="footer-brand">
+                    ROAST & BEAN
+                </h3>
+
+                <p class="footer-description">
+                    Artisanal single-origin roasts, masterfully curated and
+                    roasted with sensory precision. Dedicated to the mindful
+                    ritual of exquisite coffee crafted sustainably from source
+                    to cup.
+                </p>
+
+                <!-- Social Icons -->
+                <div class="footer-socials">
+
+                    <a href="#">
+                        <i class="fa-solid fa-camera"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-book-open"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-at"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="col-6 col-lg-2">
+
+                <h4 class="footer-heading">
+                    Quick Links
+                </h4>
+
+                <ul class="footer-links">
+
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Seasonal Menu</a></li>
+                    <li><a href="#">Our Roasting Story</a></li>
+                    <li><a href="#">Find a Roastery</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Hours & Contact -->
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <h4 class="footer-heading">
+                    Hours & Contact
+                </h4>
+
+                <div class="contact-item">
+
+                    <i class="fa-regular fa-clock"></i>
+
+                    <div>
+                        <strong>Mon – Fri: 6:30am – 7:00pm</strong>
+                        <span>Sat – Sun: 7:30am – 6:00pm</span>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+                        <span>
+                            The Old Roastery, 48 Artisan Way<br>
+                            Historic Quarter, Mill District
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <span>
+                        +1 (555) 234-7628
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Newsletter -->
+            <div class="col-12 col-lg-3">
+
+                <h4 class="footer-heading">
+                    Tasting Journal
+                </h4>
+
+                <p class="newsletter-text">
+                    Receive notes on micro-lot releases, roast profiles,
+                    and exclusive sensory workshop invitations.
+                </p>
+
+
+                <form class="newsletter-form">
+
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                    >
+
+                    <button type="submit">
+                        Join
+                    </button>
+
+                </form>
+
+                <small class="newsletter-note">
+                    Small batch letters only. Unsubscribe anytime.
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2025 ROAST & BEAN Artisanal Coffee Co. All rights reserved.
+            </p>
+
+            <div class="footer-bottom-links">
+
+                <a href="#">Privacy Policy</a>
+
+                <a href="#">Terms of Service</a>
+
+                <a href="#">Wholesale Inquiries</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</section>
+</body>
+</html>
